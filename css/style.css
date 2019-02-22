@@ -865,7 +865,11 @@ hr{
 }
 
 .production-section .col-8 p{
-    color: #9e9e9e;
+    color: #fff;
+    padding: 10px;
+    background: #9e9e9e;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
 }
 
 .production-section .col-8 p b{
