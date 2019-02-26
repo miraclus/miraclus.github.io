@@ -76,3 +76,8 @@
         min-width: 100%;
     }
 }
+@media screen and (max-width: 394px){
+    .navbar-brand{
+        padding-right: 60px;
+    }
+}
