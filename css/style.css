@@ -148,13 +148,13 @@ main{
     position: relative;
     z-index: 1;
 }
-.carousel-item .cover-dark{
+.cover-dark{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .6);
     z-index: 2;
 }
 
@@ -368,6 +368,26 @@ main{
 }
 .parallax-col{
     padding: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+.parallax-col .container-fluid{
+    z-index: 3;
+    position: absolute;
+    top: 0;
+}
+.parallax-text{
+    text-align: center;
+    color: rgb(242, 121, 0);
+    padding-top: 30px;
+}
+.parallax-text i{
+    font-size: 100px;
+}
+.parallax-text p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
 }
 /* ==========SECTION IMAGES================= */
 .section-images{
@@ -658,6 +678,7 @@ footer p{
 
 .p-head-breadcrumb .breadcrumb{
     margin: 0;
+    float: right;
 }
 
 .breadcrumb {
