@@ -620,20 +620,94 @@ main{
 .pagination a{
     color: #34495e;
 }
+/* .red{
+    background: red;
+}
+.green{
+    background: green;
+} */
 /* =====================FOOTER========================= */
 footer{
-    width: 100%;
-    height: 100px;
+    /* width: 100%;
+    height: 100px; */
     background: #000;
     position: relative;
     bottom: 0;
-    /* margin-top: 20px; */
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
 }
-footer p{
-    padding-top: 40px;
+footer h2{
+    color: rgb(242, 121, 0);
+}
+footer p{  
+    padding: 25px;
     color: #999999;
     font-size: 18px;
     text-align: center;
+    border-top: 1px solid;
+}
+.contact-us-textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    /* background: rgba(242, 121, 0, .8); */
+}
+.contact-form-select{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    height: 45px;
+}
+.form-footer label{
+    color: rgb(242, 121, 0);
+}
+.footer-btn-contactUs{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #cfcfcf;
+    font-weight: bold;
+    color: #000;
+    background: rgb(242, 121, 0);
+}
+.footer-btn-contactUs:hover{
+    background: rgb(185, 93, 1);
+}
+.subscribe-news-wrap{
+    position: relative; 
+    margin-top: 10px;   
+}
+.subscribe-news-wrap label{
+    float: left;
+}
+.subscribe-news-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: 45px;
+    background: rgb(242, 121, 0);
+    /* margin-right: -50px; */
+    border: 0;
+    cursor: pointer;
+}
+#subscribe-news{
+    width: 100%;
+    /* padding-right: 50px; */
+    height: 45px;
+    padding: 0 90px 0 10px;
+    /* border-radius: 5px; */    
+}
+.subscribe-news-btn i{
+    font-size: 30px;
 }
 /* ---------------------ICONS--------------- */
 .icon-location{
