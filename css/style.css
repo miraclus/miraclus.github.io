@@ -723,7 +723,7 @@ footer p{
     clear: both; */
 /* } */
 
-.icon-phone, .icon-mail-alt, .icon-home{
+.icon-phone, .icon-mail-alt, .icon-home, .icon-fax{
     padding-right: 5px;
     font-size: 18px;
     color: #34495e;
@@ -1017,7 +1017,7 @@ hr{
     color: rgba(242, 121, 0, .8);
     /* color: #000; */
 }
-.social-section .icon-facebook-official{
+/* .social-section .icon-facebook-official{ */
     /* font-size: 45px !important; */
     /* padding-bottom: 5px; */
-}
+/* } */
