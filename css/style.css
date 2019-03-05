@@ -10,13 +10,17 @@ a:hover{
     text-decoration: none;
 }
 body{
-    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Roboto', 'serif';
     /* background-color: pink; */
     /* position: relative; */
     /* background:#f1f1f1; */
 }
 /*-----================ HEADER============== */
-.nav-link{
+.main-menu {
+    font-family: 'PT Sans', sans-serif;
+}
+.main-menu .nav-link{
     color: #999 !important;
     line-height: 6.5em;
     position: relative;    
@@ -44,7 +48,7 @@ body{
     cursor: default !important;
 }
 
-.nav-link:after{
+.main-menu .nav-link:after{
     content: "";
     width: 0;
     height: 5px;
@@ -55,23 +59,23 @@ body{
     transition: 0.3s all;
 }
 
-.nav-link:hover{
+.main-menu .nav-link:hover{
     color: rgba(242, 121, 0, 1) !important; 
 } 
-.nav-link:hover:after{
+.main-menu .nav-link:hover:after{
     width: 100%;
     left: 0;
     transition: 0.3s all;
 }
 
-.nav-item:hover .dropdown-menu{
+.main-menu .nav-item:hover .dropdown-menu{
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: menu-animate;
   animation-duration: 0.5s;
   display: block;
 }
-.navbar{
+.main-menu{
     padding: 0 !important;
 }
 .navbar-brand img{
@@ -80,10 +84,10 @@ body{
 header{
     border-bottom: 5px solid rgba(0, 0, 0, 0);
 }
-.dropdown-item > i{
+.main-menu .dropdown-item > i{
     color: rgba(242, 121, 0, 1);
 }
-.dropdown-item:hover i{ 
+.main-menu .dropdown-item:hover i{ 
   color: #000;  
 }
 
@@ -1017,7 +1021,93 @@ hr{
     color: rgba(242, 121, 0, .8);
     /* color: #000; */
 }
-/* .social-section .icon-facebook-official{ */
-    /* font-size: 45px !important; */
-    /* padding-bottom: 5px; */
-/* } */
+/*===================== PAGE ECOLOGY=============== */
+.container-ecology .nav-pills .nav-link.active{
+    font-weight: bold;
+    background: rgba(12,13,14,0.05);
+    color: #0C0D0E;
+    border-right: 3px solid #F48024;
+}
+.container-ecology h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.container-ecology .nav-pills .nav-link.active::before{
+    font-family: fontello;
+    content: "\f299";
+    font-weight: normal;
+    color: green;
+    font-size: 18px;
+    padding-right: 5px;
+}
+.container-ecology p{
+    text-align: justify;
+    /* text-indent: 15px; */
+}
+.aside-colspy .navbar-brand{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.aside-colspy a{
+    color: #535a60;
+}
+.map-link{
+    cursor: pointer;
+    color: red !important;
+}
+.aside-colspy .nav-pills .nav-link {
+    border-radius: 0;
+}
+.sticky-top{
+    top: 20px;
+}
+.section-policy img, .section-air-protection img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    /* padding: 15px; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+}
+.section-policy h2{
+    font-weight: bolder;
+    font-family: 'Roboto', 'serif';
+    margin-bottom: 25px;
+}
+.section-policy h3{
+    margin-bottom: 25px;
+}
+.section-policy h3 > span{
+    font-size: 20px;
+    color: rgb(242, 121, 0);
+}
+.ecology-policy-ul li{
+    text-align: justify;
+}
+.ecology-policy-ul li::before{
+    font-family: fontello;
+    content: "\f101";
+    font-weight: normal;
+    color: rgb(242, 121, 0);
+    font-size: 15px;
+    padding-right: 10px;
+}
+.section-air-protection h3{
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: justify;
+}
+.section-air-protection h2{
+    font-weight: bolder;
+}
+.ecology-link a{
+    color: red;
+}
+.ecology-link a:hover{
+    text-decoration: underline;
+}
+.ecology-link i{
+    font-size: 20px;
+}
