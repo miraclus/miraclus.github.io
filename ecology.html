@@ -14,13 +14,17 @@
     <link href="css/fontello.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="js/jquery-3.3.1.min.js"  type="text/javascript"></script>   
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByUr5ECQty0nZcvA6xhSBM1Q0kyBt0cUQ"></script>
+    
+    
+    <script src="js/script.js" type="text/javascript"></script>  
+    
+
     <title>Социальная сфера</title>
 </head>
 <body data-spy="scroll" data-target="#navbar-ecology">
-        <script src="js/jquery-3.3.1.min.js"  type="text/javascript"></script>
-        <script src="js/parallax.min.js"  type="text/javascript"></script>    
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/script.js" type="text/javascript"></script>    
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light bg-white main-menu">
@@ -106,7 +110,7 @@
             
             <div class="container container-ecology" >
                 <div class="row">
-                    <aside class="col-md-3 aside-colspy">
+                    <aside class="col-md-3 col-sm-0 aside-colspy">
                         <nav id="navbar-ecology" class="navbar sticky-top">
                             <a class="navbar-brand" href="#">Экология</a>
                             <nav class="nav nav-pills flex-column nav-ecology">
@@ -116,22 +120,31 @@
                                     <a class="nav-link ml-3 my-1" href="#item-1-2">Основная цель</a>
                                     <a class="nav-link ml-3 my-1" href="#item-1-3">Основные принципы</a>                                    
                                 </nav>
-                                <a class="nav-link" href="#item-2">Item2</a>
-                                <a class="nav-link" href="#item-3">Item3</a>
+                                <a class="nav-link" href="#item-2">1. Охрана атмосферного воздуха</a>
                                 <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-                                    <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                                    <a class="nav-link ml-3 my-1" href="#item-2-1">Свидетельство о соответствии</a>
+                                    <a class="nav-link ml-3 my-1" href="#item-2-2">Измерения</a>                           
+                                </nav>
+                                <a class="nav-link" href="#item-3">2. Охрана водных ресурсов</a>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3 my-1" href="#item-3-1">Карта</a>
+                                    <a class="nav-link ml-3 my-1" href="#item-3-2">Объекты изучения</a>
+                                    <a class="nav-link ml-3 my-1" href="#item-3-3">Таблица</a>
+                                </nav>
+                                <a class="nav-link" href="#item-4">3. Обращение с отходами</a>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3 my-1" href="#item-4-1">Карта</a>
+                                    <a class="nav-link ml-3 my-1" href="#item-4-2">Динамика показателей</a>
+                                    <a class="nav-link ml-3 my-1" href="#item-4-3">Сертификат</a>
                                 </nav>
                             </nav>
                         </nav>
                     </aside>
-                    <div class="col-md-9">
+                    <div class="col-xl-9 col-lg-12">
                             <div data-spy="scroll" data-target="#navbar-ecology" data-offset="0">
-                                <section class="section-policy">                                    
-                                    <!-- <div class="row">   
-                                        <div class="col-12">                                      -->
+                                <section class="section-policy">                                   
                                             <h2 id="item-1">ЭКОЛОГИЧЕСКАЯ ПОЛИТИКА ПАО «Укртатнафта»</h2>
-                                            <img src="img/ecology-head.JPG" alt="Экология">
+                                            <img src="img/ecology-head2.JPG" alt="Экология">
                                             <h3 id="item-1-1">Наш девиз: <span>от экологии производства ─ к экологии топлив.</span></h3>
                                             <h3 id="item-1-2">Основная цель: <span>модернизация и развитие современных систем нефтепереработки, снижение выбросов в окружающую среду, утилизация отходов производства.</span></h3>
                                             <h3 id="item-1-3">Основные принципы:</h3>
@@ -152,192 +165,128 @@
                                                 <li>повышение осведомленности персонала предприятия в области охраны окружаю-щей среды и обеспечение должного уровня понимания важности экологических ас-пектов;</li>
                                                 <li>достижение высокого уровня знаний работников предприятия в области ликвида-ции аварийных ситуаций и по другим вопросам защиты окружающей среды путем периодических проверок.</li>
                                             </ul>
-                                    <!-- </div>
-                                    </div> -->
                                 </section>
 
                                 <section class="section-air-protection">
                                             <h3>ПАО «Укртатнафта» является крупнейшим в Украине нефтеперерабатывающим комплексом, считает охрану окружающей среды приоритетным направлением своей деятельности.</h3>
                                             <h3>Мониторинг окружающей среды осуществляется по трем направлениям:</h3>
-                                            <h2>ОХРАНА АТМОСФЕРНОГО ВОЗДУХА</h2>
-                                            <img src="img/ecology-air-protection.png" alt="Охрана атмосферного воздуха">
+                                            <h2 id="item-2">2. ОХРАНА АТМОСФЕРНОГО ВОЗДУХА</h2>
+                                            <img src="img/ecology-air-protection2.JPG" alt="Охрана атмосферного воздуха" >
                                             <p>Сокращение вредных выбросов в атмосферу — одно из приоритетных направлений деятельности предприятия в сфере экологии.
                                                 Контроль за состоянием атмосферы в ПАО «Укртатнафта» проводится собственной аттестованной лабораторией: </p>
-                                            <p><span class="ecology-link"> <a href="ecofiles/lab-cert-ua.pdf"><i class="demo-icon icon-file-pdf"></i>Свидетельство о соответствии состояния системы измерений" № 015-17 КФ от 08.09.17 г.. Действительно до 07.09.2020 года.</a></span></p>
+                                            <p id="item-2-1"><a href="ecofiles/lab-cert-ua.pdf" class="ecology-link"><i class="demo-icon icon-file-pdf"></i>Свидетельство о соответствии состояния системы измерений" № 015-17 КФ от 08.09.17 г.. Действительно до 07.09.2020 года.</a>     
                                             <p>На предприятии действует многолетняя практика мониторинга загрязнения атмосферного воздуха по установленным эталонным точкам санитарно-защитной зоны (СЗЗ), а также на границе СЗЗ предприятия и в жилой зоне г. Кременчуга.
                                                 Анализ состояния атмосферного воздуха проводится ежемесячно в 6 точках, по 5 ингредиентам, с учетом направления ветра в сторону жилой зоны, точки Т-10 и Т-11 контролируются в один и тот же день последовательно для контроля изменений концентраций загрязняющих веществ по мере удаления от предприятия.</p>
                                             <p><b>Информация содержит:</b></p>
-                                            <ul>
-                                                <li><span class="ecology-link"><a href="ecofiles/air_2016.xls"><i class="demo-icon icon-file-excel"></i>Измерения за 2016г.</a></span></li>
-                                                <li><span class="ecology-link"><a href="ecofiles/air_2017.xls"><i class="demo-icon icon-file-excel"></i>Измерения за 2017г.</a></span></li>
-                                                <li><span class="ecology-link"><a href="ecofiles/air_2018.xls"><i class="demo-icon icon-file-excel"></i>Измерения за 2018г.</a></span></li>
-                                                <li><span class="ecology-link"><a href="ecofiles/air_2019.xls"><i class="demo-icon icon-file-excel"></i>Измерения за 2019г.</a></span></li>
+                                            <ul id="item-2-2">
+                                                <li><a href="ecofiles/air_2016.xls" class="ecology-link"><i class="demo-icon icon-file-excel"></i>Измерения за 2016г.</a></li>
+                                                <li><a href="ecofiles/air_2017.xls" class="ecology-link"><i class="demo-icon icon-file-excel"></i>Измерения за 2017г.</a></li>
+                                                <li><a href="ecofiles/air_2018.xls" class="ecology-link"><i class="demo-icon icon-file-excel"></i>Измерения за 2018г.</a></li>
+                                                <li><a href="ecofiles/air_2019.xls" class="ecology-link"><i class="demo-icon icon-file-excel"></i>Измерения за 2019г.</a></li>
                                             </ul>
-                                            <p> Результаты измерений фактических концентраций загрязняющих веществ в атмосферном воздухе 
-                                                по сероводороду, фенолу, ксилолу, толуолу, углеводородам (<a class="map-link" data-toggle="collapse" data-target="#map"><i class="demo-icon icon-map"></i> карта </a>)</p>
+                                            <p> Результаты измерений фактических концентраций загрязняющих веществ в атмосферном воздухе по сероводороду, фенолу, ксилолу, толуолу, углеводородам (<a class="map-link" data-toggle="collapse" data-target="#map"><i class="demo-icon icon-map"></i> карта </a>)</p>
                                             <div id="map" class="collapse ">
-                                                    <div id="google-map" data-latitude="49.1661923" data-longitude="33.4737278"></div>
-                                            </div></p>
-                                            <script>
-                                                //Google Map
-                                                var latitude = $('#google-map').data('latitude')
-                                                var longitude = $('#google-map').data('longitude')
-                                                function initialize_map() {
-                                                    var myLatlng = new google.maps.LatLng(latitude,longitude);
-                                                    var mapOptions = {
-                                                        zoom: 12,
-                                                        center: myLatlng,
-                                                    mapTypeId: 'satellite'
-                                            
-                                                    };
-                                                    var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-                                                    var t6 = {lat: 49.197271, lng: 33.459885};
-                                                    var t10 = {lat: 49.161445, lng: 33.436901};
-                                                    var t11 = {lat: 49.142189, lng: 33.437198};
-                                                    var t8 = {lat: 49.152896, lng: 33.485854};
-                                                    var t9 = {lat: 49.155781, lng: 33.517553};
-                                                    var t7 = {lat: 49.173982, lng: 33.516913};
-                                            
-                                                    var contentT6 = '<div  class="info-window" id="content"><p><b>T6</b>    <a href="ecofiles/air_2016.xls" class="mhot">Информация о результатах измерений (2016)</a></p><p> <a href="ecofiles/air_2017.xls" class="mhot">Информация о результатах измерений (2017)</a></p><p> <a href="ecofiles/air_2018.xls" class="mhot">Информация о результатах измерений (2018)</a></p>' +
-                                                        '</div>';
-                                                    var contentT10 = '<div  class="info-window" id="content"><p><b>T10</b>  <a href="ecofiles/air_2016.xls" class="mhot">Информация о результатах измерений (2016)</a></p><p> <a href="ecofiles/air_2017.xls" class="mhot">Информация о результатах измерений (2017)</a></p><p> <a href="ecofiles/air_2018.xls" class="mhot">Информация о результатах измерений (2018)</a></p>' +
-                                                        '</div>';
-                                                    var contentT11 = '<div  class="info-window" id="content"><p><b>T11</b>  <a href="ecofiles/air_2016.xls" class="mhot">Информация о результатах измерений (2016)</a></p><p> <a href="ecofiles/air_2017.xls" class="mhot">Информация о результатах измерений (2017)</a></p><p> <a href="ecofiles/air_2018.xls" class="mhot">Информация о результатах измерений (2018)</a></p>' +
-                                                        '</div>';
-                                                    var contentT8 = '<div  class="info-window" id="content"><p><b>T8</b>    <a href="ecofiles/air_2016.xls" class="mhot">Информация о результатах измерений (2016)</a></p><p> <a href="ecofiles/air_2017.xls" class="mhot">Информация о результатах измерений (2017)</a></p><p> <a href="ecofiles/air_2018.xls" class="mhot">Информация о результатах измерений (2018)</a></p>' +
-                                                        '</div>';
-                                                    var contentT9 = '<div  class="info-window" id="content"><p><b>T9</b>    <a href="ecofiles/air_2016.xls" class="mhot">Информация о результатах измерений (2016)</a></p><p> <a href="ecofiles/air_2017.xls" class="mhot">Информация о результатах измерений (2017)</a></p><p> <a href="ecofiles/air_2018.xls" class="mhot">Информация о результатах измерений (2018)</a></p>' +
-                                                        '</div>';
-                                                    var contentT7 = '<div  class="info-window" id="content"><p><b>T7</b>    <a href="ecofiles/air_2016.xls" class="mhot">Информация о результатах измерений (2016)</a></p><p> <a href="ecofiles/air_2017.xls" class="mhot">Информация о результатах измерений (2017)</a></p><p> <a href="ecofiles/air_2018.xls" class="mhot">Информация о результатах измерений (2018)</a></p>' +
-                                                        '</div>';
-                                            
-                                                    var infowindowT6 = new google.maps.InfoWindow({
-                                                        content: contentT6
-                                                    });
-                                                    var markerT6 = new google.maps.Marker({
-                                                        position: t6,
-                                                        map: map,
-                                                        title: 'T6'
-                                                    });
-                                                    google.maps.event.addListener(markerT6, 'click', function() {
-                                                        infowindowT6.open(map,markerT6);
-                                                    });
-                                            
-                                                    var infowindowT10 = new google.maps.InfoWindow({
-                                                        content: contentT10
-                                                    });
-                                                    var markerT10 = new google.maps.Marker({
-                                                        position: t10,
-                                                        map: map,
-                                                        title: 'T10'
-                                                    });
-                                                    google.maps.event.addListener(markerT10, 'click', function() {
-                                                        infowindowT10.open(map,markerT10);
-                                                    });
-                                            
-                                                    var infowindowT11 = new google.maps.InfoWindow({
-                                                        content: contentT11
-                                                    });
-                                                    var markerT11 = new google.maps.Marker({
-                                                        position: t11,
-                                                        map: map,
-                                                        title: 'T11'
-                                                    });
-                                                    google.maps.event.addListener(markerT11, 'click', function() {
-                                                        infowindowT11.open(map,markerT11);
-                                                    });
-                                            
-                                                    var infowindowT8 = new google.maps.InfoWindow({
-                                                        content: contentT8
-                                                    });
-                                                    var markerT8 = new google.maps.Marker({
-                                                        position: t8,
-                                                        map: map,
-                                                        title: 'T8'
-                                                    });
-                                                    google.maps.event.addListener(markerT8, 'click', function() {
-                                                        infowindowT8.open(map,markerT8);
-                                                    });
-                                            
-                                                    var infowindowT9 = new google.maps.InfoWindow({
-                                                        content: contentT9
-                                                    });
-                                                    var markerT9 = new google.maps.Marker({
-                                                        position: t9,
-                                                        map: map,
-                                                        title: 'T9'
-                                                    });
-                                                    google.maps.event.addListener(markerT9, 'click', function() {
-                                                        infowindowT9.open(map,markerT9);
-                                                    });
-                                            
-                                                    var infowindowT7 = new google.maps.InfoWindow({
-                                                        content: contentT7
-                                                    });
-                                                    var markerT7 = new google.maps.Marker({
-                                                        position: t7,
-                                                        map: map,
-                                                        title: 'T7'
-                                                    });
-                                                    google.maps.event.addListener(markerT7, 'click', function() {
-                                                        infowindowT7.open(map,markerT7);
-                                                    });
-                                                }
-                                                initialize_map();
-                                                $('#map').on('hidden.bs.collapse', function () {
-                                                    initialize_map();
-                                                })
-                                                $('#map').on('shown.bs.collapse', function () {
-                                                    initialize_map();
-                                                })
-                                            
-                                                google.maps.event.addDomListener(window, 'resize', function() {
-                                            
-                                                });
-                                            </script>
+                                                    <div id="google-map" data-latitude="49.1661923" data-longitude="33.4737278" style="height: 500px"></div></p>                                                  
+                                            </div>                                            
+                                            <p>Данный мониторинг позволяет в полной мере информировать общественность о качестве атмосферного воздуха в зоне влияния ПАО «Укртатнафта».</p>
                                 </section>
 
-                                                                
-                                <h4 id="item-1">Item 1</h4>
-                                <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
-                                <h5 id="item-1-1">Item 1-1</h5>
-                                <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
-                                <h5 id="item-1-2">Item 2-2</h5>
-                                <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
-                                <h4 id="item-2">Item 2</h4>
-                                <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
-                                <h4 id="item-3">Item 3</h4>
-                                <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
-                                <h5 id="item-3-1">Item 3-1</h5>
-                                <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
-                                <h5 id="item-3-2">Item 3-2</h5>
-                                <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
+                                <section class="section-woter-protection">
+                                    <h2 id="item-3">2. ОХРАНА ВОДНЫХ РЕСУРСОВ</h2>
+                                    <p>ПАО «Укртатнафта» имеет наивысший в отрасли показатель водооборота 99,7–99.8% и является единственным НПЗ, работающим без сброса сточных вод в открытые водоемы. 
+                                        Регулярные исследования, проводимые Украинским центром охраны вод по скважинам вокруг пруда-испарителя, подтверждают снижение 
+                                        загрязненности подземных вод и соответственно правильность
+                                        <span class="ecology-link"><a data-toggle="collapse" data-target="#protect_woter">прогноза  специалистов по завершению самоочистки подземных горизонтов, в 2003–2007 годах.</a></span>
+                                        <div id="protect_woter" class="collapse ">
+                                            <img src="img/result.jpg" alt="Результаты загрязнения воды">
+                                        </div>
+                                    </p>
+                                    <p>В связи с формированием очагов и ореолов загрязнения грунтов и подземных вод нефтепродуктами в районе расположения объектов промплощадки ПАО «Укртатнафта» начиная с 1988 г. 
+                                        по настоящее время проводятся систематические научно-исследовательские работы по экологической оценке воздействия предприятия на подземные и взаимосвязанные с ними, поверхностные воды. 
+                                        Работы проводятся в сотрудничестве с Украинским научно-исследовательским институтом экологических проблем (г. Харьков) на основании лабораторных исследований 
+                                        сети наблюдательных скважин
+                                         (<a id="item-3-1" class="map-link" data-toggle="collapse" data-target="#map-water"><i class="demo-icon icon-map"></i> карта </a>). </p>
+                                        <div id="map-water" class="collapse">
+                                            <div id="google-map-water" data-latitude="49.15435" data-longitude="33.976067"></div>                                            
+                                        </div>                                        
+                                        <p>Целью работ является ведение специализированного мониторинга с оценкой изменения состояния загрязнения подземных вод и тем самым — оценка эффективности природоохранных мероприятий, реализованных на ПАО «Укртатнафта».</p> 
+                                        <ul>
+                                            <p id="item-3-2"><b>В качестве основных объектов изучения рассматривались:</b></p>
+                                            <li>
+                                                <p><i class="demo-icon icon-angle-double-right"></i>территория непосредственно промплощадки ПАО «Укртатнафта», где основными источниками загрязнения являются технологические установки, 
+                                                резервуары готовой продукции, продуктопроводы и коммуникации, очистные сооружения и шламонакопители;</p></li>
+                                            <li>
+                                                <p><i class="demo-icon icon-angle-double-right"></i>район воздействия промплощадки (зона трансформации), включающий территорию подверженную загрязнению подземных и поверхностных вод в результате миграции
+                                                 нефтепродуктов от промплощадки (очага загрязнения) к зоне дренирования (р. Псел);</p></li>
+                                            <li>
+                                                <p><i class="demo-icon icon-angle-double-right"></i>район расположения пруда — испарителя, фильтрационные потери из которого обусловили трансформацию природного качества подземных вод.</p>
+                                            </li>
+                                        </ul>
+                                        <p>В результате реализации основных водоохранных мероприятий (1994—2005 гг.) экологическая ситуация в регионе начала постепенно меняться в сторону не только снижения интенсивности загрязнения
+                                             подземных вод и локализации ореолов загрязнения, но и восстановления качества подземных вод на значительных площадях, что подтверждается
+                                              результатами исследований, которые приведены в <b><a href="ecofiles/water-table.doc" class="ecology-link" id="item-3-3"><i class="demo-icon icon-file-word"></i>таблице.</a></b></p>
+                                        <p>Так же на промплощадке ПАО «Укртатнафта» существует системы инженерной защиты от проникновения нефтепродукта в грунтовые воды за территорию предприятия (более 45 скважин, извлекающих нефтепродукт). Следует отметить экологичность внедренного метода. 
+                                            Нефтепродукт извлекается практически чистым, направляется на переработку с содержанием воды менее 1%. Вода также не смешивается с нефтепродуктом, содержание последнего в воде находится на уровне менее 0,1–0,3 мг/л.
+                                            На дневную поверхность ни вода, ни нефтепродукты не выливаются. Система работает круглосуточно и круглогодично. Это единственная в своем роде система, внедренная в Украине. Работа системы на постоянной основе 
+                                            контролируется развитой сетью наблюдательных пунктов мониторинга; на базе научных исследований намечена очередность в ее развитии, которая базируется на прогнозных проработках и математическом моделировании.
+                                            Работа выполняются УМЦ «Гидротон ЛТД» (г. Харьков). Результаты мониторятся Украинским научно-исследовательским институтом экологических проблем.
+                                            Разработанная и внедренная методология санации территории является существенным вкладом в реализацию Программы оздоровления бассейна Днепра и Северного Причерноморья.</p>      
+                                        <p><b><i>Исходя из результатов исследований можно констатировать, что экологическая ситуация в зоне воздействия объектов ПАТ «Укртатнафта» отличается от предыдущих лет отсутствием ранее существовавшей области
+                                             загрязнения подземных вод, а также снижением интенсивности (до отсутствия) на отдельных единичных участках.</i></b></p>    
+                                </section>
+
+                                <section class="section-trash">
+                                    <h2 id="item-4">3. ОБРАЩЕНИЕ С ОТХОДАМИ</h2>
+                                    <p>Система управления производственными отходами в ПАО «Укртатнафта» позволяет оптимизировать потоки движения отходов, снизить экологические последствия и экономические издержки их образования.</p>
+                                    <p>Предприятие участвует в реализации государственной политики в сфере обращения с отходами направленной на минимизацию отходов, рациональное использование и экологически безопасное размещение отходов, стремится к максимально возможному использованию отходов в целях снижения воздействия на объекты окружающей среды.
+                                            Промышленные и бытовые отходы, образующиеся при переработке нефти и нефтепродуктов, подлежат утилизации или захоронению согласно разработанных на предприятии действующих общезаводских инструкций в области обращения с отходами производства.</p>
+                                    <p>Предприятием эксплуатируется специализированный полигон, отвечающий экологическим нормам, для захоронения промышленных отходов III и IV классов опасности, образующиеся в производственных процессах ПАО: отработанные катализаторы, цеолиты, нефтешламы, отходы, содержащие нефтепродукты. <br/>
+                                    (<a class="ecology-link" data-toggle="collapse" data-target="#map-pt" id="item-4-2"><i class="demo-icon icon-map"></i>карта</i></a>)</p>
+                                        <div id="map-pt" class="collapse">
+                                            <div id="google-map-pt" data-latitude="49.169133" data-longitude="33.500563"></div>
+                                        </div>        
+                                    <p>Уникальность полигона заключается в том, что в его конструкции предусмотрены надежные донные и бортовые асфальтобетонные с битумным покрытием противофильтрационные экраны, исключающие вероятность 
+                                        биологического и химического загрязнения прилегающих территорий, грунтовых вод, и обеспечивающие сбор фильтрата для последующей его очистки на очистных сооружениях предприятия.
+                                        С привлечением иностранных инвестиций отработана технология, приобретено оборудование и с июня 1997 года работает полная схема по переработке любых нефтесодержащих отходов.</p>
+                                    <p>Потенциально непригодные опасные отходы, такие как отработанные ртутные лампы и аккумуляторные батареи, передаются на утилизацию потребителю согласно заключённых договоров.</p>
+                                    <p>В результате хозяйственной деятельности на предприятии образуются бытовые и строительные отходы, которые захороняются на полигоне твёрдых бытовых отходов (ТБО, 
+                                        <a class="ecology-link" class="map-button" data-toggle="collapse" data-target="#map-tbo"><i class="demo-icon icon-map"></i> карта</a>)
+                                        <div id="map-tbo" class="collapse">
+                                            <div id="google-map-tbo" data-latitude="49.174450" data-longitude="33.489802"></div>
+                                        </div>    
+                                    </p>
+                                    <p>На данный момент специалистами предприятия разрабатывается проектная документация по реконструкции и расширению полигона ТБО с целью увеличения зоны складирования отходов,
+                                         весового и радиационного контроля поступающих отходов, чистки и дезинфекции колёс, мойки транспорта после разгрузки.</p>
+                                    <p>Потенциально пригодные для дальнейшего использования отходы и некондиционная продукция: средства упаковки, металлолом, отработанные шины, отработанные катализаторы и др.
+                                         передаются заготовительным организациям по заключённым договорам как вторичные ресурсы.</p>
+                                    <p>Каждый отход на предприятии дифференцирован и учтён. Ежегодно ведутся государственные статистические отчётности по формам № 1- отходы, № 1 — экологические затраты, а на постоянной основе — первичный учёт отходов по типовой форме № 1-ВТ: <br/>
+                                        <a id="item-4-2" class="ecology-link" href="ecofiles/dynamic.doc"><i class="demo-icon icon-file-pdf"></i> Динамика основных показателей в области обращения с отходами.pdf </a></p>
+                                    <p>В ПАО «Укртатнафта» внедрена система экологического управления ДСТУ ISO 14001:2006, что подтверждается сертификатом соответствия, выданным ГП «Полтавастандартметрология». <br/>
+                                        <a id="item-4-3" class="ecology-link" href="ecofiles/cert-iso.pdf"><i class="demo-icon icon-file-pdf"></i> Сертификат.pdf </a>
+                                    </p>
+                                    <p>Данный сертификат подтверждает высокий уровень системы экологическо-го управления на предприятии. Введённая система направлена
+                                         на качественное повышение уровня управления в области охраны окружающей среды и расшире-ние эффективного сотрудничества в этом 
+                                         направлении с другими предприятия-ми, профильными институтами и научными организациями.</p>
+                                </section>
                             </div>
                     </div>
                 </div>
 
             </div>
-
-           
-<!-- 
-        <div class="blue"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 red"></div>
-                <div class="col green"></div>
-            </div>
-        </div> -->
-    <!-- </div> -->
+            
     </main>
 
     <footer>
             <p>Create by: miraclus1@gmail.com</p>
     </footer>  
     
-    
-    <script src="js/jquery-3.3.1.min.js"  type="text/javascript"></script>
+    <script src="js/googleMap.js" type="text/javascript"></script>    
+    <script src="js/googleMapWP.js" type="text/javascript"></script>     
+    <script src="js/googleMapTrash.js" type="text/javascript"></script>   
+    <script src="js/googleMapTrash2.js" type="text/javascript"></script> 
+    <!-- <script src="js/jquery-3.3.1.min.js"  type="text/javascript"></script>
     <script src="js/parallax.min.js"  type="text/javascript"></script>    
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>    
+    <script src="js/script.js" type="text/javascript"></script>     -->
 </body>
 </html>
