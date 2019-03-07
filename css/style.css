@@ -1022,45 +1022,28 @@ hr{
     /* color: #000; */
 }
 /*===================== PAGE ECOLOGY=============== */
-.ecology-main-wrap{
-    position: relative;
-}
-.aside-colspy .nav-pills .nav-link.active{
+.container-ecology .nav-pills .nav-link.active{
     font-weight: bold;
     background: rgba(12,13,14,0.05);
     color: #0C0D0E;
     border-right: 3px solid #F48024;
     font-size: 15px;
-    position: relative;
-    /* padding-left: .78; */
 }
 .container-ecology h2{
     text-align: center;
     margin-bottom: 25px;
 }
-.aside-colspy .nav-pills .nav-link.active::before{
+.container-ecology .nav-pills .nav-link.active::before{
     font-family: fontello;
     content: "\f299";
     font-weight: normal;
     color: green;
     font-size: 18px;
-    position: absolute;
-    /* left: -5px; */
-    right: 15px;
-}
-.container-ecology{
-    position: relative;
-    top: -710px;
+    padding-right: 5px;
 }
 .container-ecology p{
     text-align: justify;
-}
-.aside-colspy{
-    /* position: sticky;
-    left: 30px;
-    top: 10px; */
-    padding-left: 20px;
-    max-width: 350px;
+    /* text-indent: 15px; */
 }
 .aside-colspy .navbar-brand{
     font-weight: bold;
@@ -1098,9 +1081,8 @@ hr{
     margin-bottom: 25px;
 }
 .section-policy h3 > span{
-    /* font-size: 20px; */
+    font-size: 20px;
     color: rgb(242, 121, 0);
-    font-size: 1.75rem;
 }
 .ecology-policy-ul li{
     text-align: justify;
@@ -1137,14 +1119,6 @@ hr{
 .section-woter-protection ul li i{
     color: rgb(242, 121, 0);
 }
-.aside-colspy .navbar{
-    max-width: 350px;
-}
-.nav-ecology{
-    width: 100%;
-}
 .nav-ecology a{
     font-size: 14px;
-    /* padding-left: 10px; */
-    
 }
