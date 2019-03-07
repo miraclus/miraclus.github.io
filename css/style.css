@@ -30,9 +30,9 @@ body{
     color: #999 !important;
     /* line-height: 6.5em; */
     /* padding: 8px; */
-    margin-bottom: 0 !important;
-    
+    margin-bottom: 0 !important;    
 }
+
 .lang li{
     display: inline-block;
     color: #000;
@@ -48,6 +48,9 @@ body{
     cursor: default !important;
 }
 
+.menu-logo-lang{
+    display: flex;
+}
 .main-menu .nav-link:after{
     content: "";
     width: 0;
@@ -1027,7 +1030,8 @@ hr{
     background: rgba(12,13,14,0.05);
     color: #0C0D0E;
     border-right: 3px solid #F48024;
-    font-size: 15px;
+    /* font-size: 15px; */
+    position: relative;
 }
 .container-ecology h2{
     text-align: center;
@@ -1039,7 +1043,9 @@ hr{
     font-weight: normal;
     color: green;
     font-size: 18px;
-    padding-right: 5px;
+    /* padding-right: 5px; */
+    position: absolute;
+    right: 2px;
 }
 .container-ecology p{
     text-align: justify;
@@ -1052,6 +1058,7 @@ hr{
 
 .aside-colspy a{
     color: #535a60;
+    width: 100%;
 }
 .map-link{
     cursor: pointer;
@@ -1063,8 +1070,14 @@ hr{
 .sticky-top{
     top: 20px;
 }
+.section-policy{
+    /* max-width: 100%; */
+}
 .section-policy img, .section-air-protection > img{
     width: 100%;
+    /* max-width: 100%; */
+    /* margin: 0 auto;
+    display: block; */
     height: 100%;
     margin-bottom: 30px;
     object-fit: cover;
@@ -1081,8 +1094,11 @@ hr{
     margin-bottom: 25px;
 }
 .section-policy h3 > span{
-    font-size: 20px;
+    font-size: 1.75rem;
     color: rgb(242, 121, 0);
+    /* font-family: 'Roboto', 'serif'; */
+    font-family: 'PT Sans', sans-serif;
+    /* font-weight: bolder; */
 }
 .ecology-policy-ul li{
     text-align: justify;
