@@ -78,9 +78,9 @@
     
 }
 @media screen and (max-width: 394px){
-    .navbar-brand{
-        /* padding-right: 60px; */
-    }
+    /* .navbar-brand{
+        padding-right: 60px;
+    } */
     .lang li{
         display: block;
     }

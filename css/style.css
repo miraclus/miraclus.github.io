@@ -117,10 +117,10 @@ button.navbar-toggler{
 
 /* ===============END HEADER================ */
 /* =================MAIN_============= */
-main{
-    /* padding-bottom: 20px; */
-    /* background: #f1f1f1; */
-}
+/* main{
+    padding-bottom: 20px;
+    background: #f1f1f1;
+} */
 #carouselSliderUTN{
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     /* height: 700px; */
@@ -643,6 +643,7 @@ footer{
     color: #fff;
     text-align: center;
     padding-top: 20px;
+    margin-top: 60px;
 }
 footer h2{
     color: rgb(242, 121, 0);
@@ -1070,9 +1071,9 @@ hr{
 .sticky-top{
     top: 20px;
 }
-.section-policy{
-    /* max-width: 100%; */
-}
+/* .section-policy{
+    max-width: 100%;
+} */
 .section-policy img, .section-air-protection > img{
     width: 100%;
     /* max-width: 100%; */
