@@ -681,7 +681,8 @@ footer p{
     display: block;
     text-align: center;
     cursor: pointer;
-    border: 1px solid #cfcfcf;
+    /* border: 1px solid #cfcfcf; */
+    border: none;
     font-weight: bold;
     color: #000;
     background: rgb(242, 121, 0);
@@ -1120,14 +1121,14 @@ hr{
 .section-air-protection h2{
     font-weight: bolder;
 }
-.ecology-link {
+.red-link {
     color: red !important;
     cursor: pointer;
 }
-.ecology-link:hover{
+.red-link:hover{
     text-decoration: underline !important; 
 }
-.ecology-link i{
+.red-link i{
     font-size: 20px;
 }
 #google-map, #google-map-water, #google-map-pt, #google-map-tbo{
@@ -1138,4 +1139,41 @@ hr{
 }
 .nav-ecology a{
     font-size: 14px;
+}
+/* -----------------PAGE trade_og--------------- */
+.container-trade_og h2{
+    text-align: center;
+}
+/*----------------- PAGE ABOUT US---------- */
+.about-us-head-img img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.container-about-us{
+    text-align: justify;
+}
+.about-us-hystory-photo{
+    margin: 30px 0 50px 0;
+}
+.about-us-hystory-photo img{
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #000;
+
+}
+/* .about-us-chronology span{
+    font-weight: bold;
+    min-width: 100px;
+    display: inline-block;
+} */
+.about-us-chronology h4{
+    text-align: center;
+    padding: 30px 0;
+}
+.about-us-chronology .col-2{
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+.about-us-chronology .col-10{
+    padding-bottom: 20px;
 }
