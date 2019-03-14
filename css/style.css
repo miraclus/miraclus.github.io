@@ -86,6 +86,8 @@ body{
 }
 header{
     border-bottom: 5px solid rgba(0, 0, 0, 0);
+    /* background-image: url(../img/bg-2.jpg);
+    background-size: 100%; */
 }
 .main-menu .dropdown-item > i{
     color: rgba(242, 121, 0, 1);
@@ -176,7 +178,9 @@ button.navbar-toggler{
 }
 /* ====================NEWS SECTION=============== */
 .section_news{
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    background-image: url("../img/bg-2.jpg");
+    background-size: 100%;
 }
 /* .news {
     padding-top: 50px;
@@ -638,12 +642,14 @@ footer{
     /* width: 100%;
     height: 100px; */
     background: #000;
+    /* background: #34495e; */
     position: relative;
     bottom: 0;
     color: #fff;
     text-align: center;
     padding-top: 20px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    border-top: 1px solid #000;
 }
 footer h2{
     color: rgb(242, 121, 0);
@@ -860,12 +866,22 @@ footer p{
     top: 50px;
 }
 /* ====================PAGE POWER================= */
+.main-power{
+    /* background-image: url(../img/bg-power-9.png);
+    background-size: auto; */
+    /* background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position-y: 120px; */
+}
+.cantainer-power{
+    /* background: #fff; */
+}
 .power-main-content{
-   margin: 50px 0;   
+   padding: 50px 0;   
 }
 .power-map iframe{
     width: 100%;
-    height: 650px; 
+    height: 650px;     
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 .power-info{
@@ -877,7 +893,8 @@ footer p{
 
 .power-info ul li a{
     font-size: 14px;
-    color: #444e67;
+    /* color: #444e67; */
+    color: #000;
 }
 .power-info ul li a:hover{
     text-decoration: underline;
@@ -885,7 +902,8 @@ footer p{
 .power-info ul li a .icon-file-pdf{
     font-size: 30px;
     /* color: red; */
-    color: #34495e;
+    /* color: #34495e; */
+    color: red;
 }
 
 .power-contacts span{
@@ -911,7 +929,9 @@ footer p{
 .power-contacts ul li a:hover{
     text-decoration: underline;
 }
-
+.power-claim{
+    padding-bottom: 50px;
+}
 .power-claim p{
     text-align: justify;
     color: rgb(230, 67, 67);
@@ -1027,6 +1047,19 @@ hr{
     /* color: #000; */
 }
 /*===================== PAGE ECOLOGY=============== */
+/* .wrap-ecology{
+    background-image: url(../img/bg-eco-2.jpg);
+    background-size: 100%;
+} */
+.right-column-ecology{
+    padding-bottom: 600px;
+    background-image: url(../img/bg-eco-3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.container-ecology{
+    margin-bottom: 60px;
+}
 .container-ecology .nav-pills .nav-link.active{
     font-weight: bold;
     background: rgba(12,13,14,0.05);
@@ -1054,8 +1087,22 @@ hr{
     /* text-indent: 15px; */
 }
 .aside-colspy .navbar-brand{
+    /* display: block;
+    background-image: url(../img/desk-eco.jpg);
+    background-size: 100%;
+    height: 150px;
+    font-weight: bold;
+    font-size: 24px; */
+    display: block;
+    background-image: url(../img/desk-eco.jpg);
+    background-size: 100%;
+    height: 177px;
     font-weight: bold;
     font-size: 24px;
+    padding-top: 90px;
+    padding-left: 44px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
 }
 
 .aside-colspy a{
@@ -1151,6 +1198,7 @@ hr{
 }
 .container-about-us{
     text-align: justify;
+    margin-bottom: 60px;
 }
 .about-us-hystory-photo{
     margin: 30px 0 50px 0;
@@ -1176,4 +1224,19 @@ hr{
 }
 .about-us-chronology .col-10{
     padding-bottom: 20px;
+}
+/*----------------- PAGE CONTACTS---------- */
+.section-contacts h3{
+    text-align: center;
+}
+.section-contacts iframe{
+    width: 100%;
+}
+.section-contacts{
+    padding-bottom: 40px;
+}
+.map-road img{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000;
 }
