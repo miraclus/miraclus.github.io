@@ -866,16 +866,16 @@ footer p{
     top: 50px;
 }
 /* ====================PAGE POWER================= */
-.main-power{
-    /* background-image: url(../img/bg-power-9.png);
-    background-size: auto; */
-    /* background-repeat: no-repeat;
+/* .main-power{
+    background-image: url(../img/bg-power-9.png);
+    background-size: auto;
+    background-repeat: no-repeat;
     background-position: right bottom;
-    background-position-y: 120px; */
-}
-.cantainer-power{
-    /* background: #fff; */
-}
+    background-position-y: 120px;
+} */
+/* .cantainer-power{
+    background: #fff;
+} */
 .power-main-content{
    padding: 50px 0;   
 }
@@ -1228,6 +1228,15 @@ hr{
 /*----------------- PAGE CONTACTS---------- */
 .section-contacts h3{
     text-align: center;
+    font-weight: bolder;
+    color: #34495e;
+    padding-bottom: 20px;
+}
+.section-contacts h5{
+    text-align: center;
+    font-weight: bolder;
+    color: #34495e;
+    
 }
 .section-contacts iframe{
     width: 100%;
@@ -1239,4 +1248,26 @@ hr{
     display: block;
     margin: 0 auto;
     border: 1px solid #000;
+}
+.bg-sticker-green, .bg-sticker-orange{
+    /* background-image: url(../img/sticker-5.jpg); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 380px;
+    /* margin-bottom: 50px; */
+       
+}
+.bg-sticker-green{
+    background-image: url(../img/sticker-5.jpg);  
+    padding: 100px 25px 0px 25px;    
+}
+.bg-sticker-orange{
+    background-image: url(../img/sticker-4.png);  
+    padding: 80px 25px 0px 25px; 
+}
+.contact-map-button{
+    margin: 20px auto;
+    display: block;
+    width: 300px;
 }
