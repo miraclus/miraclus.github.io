@@ -21,9 +21,10 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 .main-menu .nav-link{
-    color: #999 !important;
+    color: #000 !important;
     line-height: 6.5em;
     position: relative;    
+    font-weight: bolder;    
     
 }
 .lang{
@@ -35,14 +36,16 @@ body{
 
 .lang li{
     display: inline-block;
-    color: #000;
+    color: #c9c9c9;
     font-weight: bolder;
     padding: 0 5px;
     font-size: 16px;
+
 }
 .lang-active{
     border-bottom: 2px solid rgba(242, 121, 0, 1);
     /* background: #000;  */
+    color: #000 !important;
 }
 #navbarDropdownMenuLink{
     cursor: default !important;
@@ -163,7 +166,7 @@ button.navbar-toggler{
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .4);
     z-index: 2;
 }
 
@@ -701,7 +704,11 @@ footer p{
     margin-top: 10px;   
 }
 .subscribe-news-wrap label{
-    float: left;
+    /* float: left; */
+    /* padding-right: 10px; */
+}
+.subscribe-news-wrap > div{
+    text-align: left;
 }
 .subscribe-news-btn{
     position: absolute;
@@ -723,6 +730,9 @@ footer p{
 }
 .subscribe-news-btn i{
     font-size: 30px;
+}
+.footer-links img{
+    width: 40%;
 }
 /* ---------------------ICONS--------------- */
 .icon-location{
@@ -753,7 +763,7 @@ footer p{
 .p-head-breadcrumb{
     background:#34495e;
     width: 100%;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .p-head-breadcrumb h2{
@@ -1225,11 +1235,31 @@ hr{
 .about-us-chronology .col-10{
     padding-bottom: 20px;
 }
+.about-us-directors{
+    margin-top: 50px;
+    /* border: 1px solid #c9c9c9; */
+}
+.about-us-directors:nth-child(2){
+    background: #AFCDE7;
+    /* border: 1px solid #c9c9c9;
+    padding: 10px; */
+}
+.about-us-directors > .col-8, .about-us-directors > .col-4{
+    border-bottom: 1px solid #000;
+}
+.about-us-directors > .col-8{
+    background: #AFCDE7;
+}
+.about-us-directors > .col-4{
+    background: #D8E6F3;
+}
 /*----------------- PAGE CONTACTS---------- */
 .main-contacts{
-    background-image: url(../img/contacts-bg.png);
+    /* background-image: url(../img/bg-white.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #c9c9c9c9; */
+    background: #d9d9d9 url(../img/test-bg-2.png) center bottom no-repeat;
 }
 .section-contacts h3{
     text-align: center;
@@ -1275,4 +1305,7 @@ hr{
     margin: 20px auto;
     display: block;
     width: 300px;
+}
+.container-white{
+    background: #fff;
 }

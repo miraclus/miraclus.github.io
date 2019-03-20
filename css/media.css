@@ -36,6 +36,9 @@
     .bg-sticker-green, .bg-sticker-orange {
         height: 365px;
     }
+    .footer-links img{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 768px){
     #carouselSliderUTN{
