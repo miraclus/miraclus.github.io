@@ -14,32 +14,53 @@ $(".news-link-wrap").hover(
       }
 );
 
-$("#nav-btn-news").click(
-    function(){
-        if($("#newsCollapse").hasClass("show")){
-            $('#all-publication').show();
-            $('.btn-news-test').hide();
-        }else{
-            $('#all-publication').hide();
-            $('.btn-news-test').show();
-        };
+// $("#nav-btn-news").click(
+//     function(){
+//         if($("#newsCollapse").hasClass("show")){
+//             $('#all-publication').show();
+//             $('.btn-news-test').hide();
+//         }else{
+//             $('#all-publication').hide();
+//             $('.btn-news-test').show();
+//         };
         
-        if($(".li-news").hasClass("news-activ")){
-            $('.li-news').removeClass("news-activ");
-            $('.li-publication').addClass("news-activ");
-        }else{
-            $('.li-publication').removeClass("news-activ");
-            $('.li-news').addClass("news-activ");
-        };
-        console.log('error ...');
-    }    
-);
-$(document).ready(function(){
-        $(".p-news-content").children("p").each(function(){
-           if($( this ).text().length > 300){
-               $(this).text(function(){
-                   return $(this).text().substring(0, 300) + "...";
-               });
-           }
-        })
-});
+//         if($(".li-news").hasClass("news-activ")){
+//             $('.li-news').removeClass("news-activ");
+//             $('.li-publication').addClass("news-activ");
+//         }else{
+//             $('.li-publication').removeClass("news-activ");
+//             $('.li-news').addClass("news-activ");
+//         };
+//         console.log('error ...');
+//     }    
+// );
+
+document.getElementById("li-realization").addEventListener("click", function(){displayNewsBlock("realizationCollapse", "li-realization");});
+document.getElementById("li-news").addEventListener("click", function(){displayNewsBlock("newsCollapse", "li-news");});
+document.getElementById("li-publication").addEventListener("click", function(){displayNewsBlock("publicationCollapse", "li-publication");});
+
+function displayNewsBlock(sectionForDisplay, activeMenuName){    
+    hideAllNewsBlocks();
+    document.getElementById(sectionForDisplay).style.display = "block";
+    changeSectionTag(sectionForDisplay);
+    changeActiveNewsMenu(activeMenuName);
+}
+function hideAllNewsBlocks(){
+    let newsBlocks = document.getElementsByClassName("newsSection");
+    for(var i=0; i < newsBlocks.length; i++){
+        newsBlocks[i].style.display = "none";
+    }
+}
+function changeSectionTag(sectionName){
+    if (sectionName === "realizationCollapse"){
+        document.getElementById("news-h2").innerHTML = "Реализация";
+    } else if (sectionName == "newsCollapse"){
+        document.getElementById("news-h2").innerHTML = "Новости";
+    } else if (sectionName == "publicationCollapse"){
+        document.getElementById("news-h2").innerHTML = "Публикации";
+    }
+}
+function changeActiveNewsMenu(activeMenuName){
+    $('.news-menu').removeClass("news-activ");
+    $('#' + activeMenuName).addClass("news-activ");
+}
