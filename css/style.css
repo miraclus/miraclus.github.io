@@ -1049,7 +1049,7 @@ hr{
 
 .social-section img{
     width: 100%;
-    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    /* box-shadow: 5px 5px 5px rgba(0,0,0,.5); */
 }
 
 .social-icons{
@@ -1149,7 +1149,7 @@ hr{
     object-fit: cover;
     object-position: 50% 50%;
     /* padding: 15px; */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, .6); */
 }
 .section-policy h2{
     font-weight: bolder;
